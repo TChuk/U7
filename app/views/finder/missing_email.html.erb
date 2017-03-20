@@ -1,0 +1,7 @@
+<h1>All Customers without an Email</h1>
+
+<div>
+  <%= link_to "Home", index_url %>
+  <%= link_to "Alphabetized", ordered_url %>
+</div>
+<%= render partial: 'customers/customer', collection: @customers %>

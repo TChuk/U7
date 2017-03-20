@@ -1,0 +1,6 @@
+<h1>All Customers</h1>
+<div>
+  <%= link_to "Alphabetized", ordered_url %>
+  <%= link_to "MissingEmails", email_url %>
+</div>
+<%= render partial: 'customers/customer', collection: @customers %>
