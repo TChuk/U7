@@ -20,6 +20,15 @@
   <% end %>
 
   <p>
+    <strong>Province:</strong>
+    <% if customer.province.nil? %>
+      None
+    <% else %>
+      <%= customer.province.name %>
+    <% end %>
+  </p>
+
+  <p>
     <strong>Notes:</strong>
     <%= customer.notes %>
   </p>
